@@ -1,0 +1,166 @@
+.navigation-container {
+    align-self: center;
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    align-items: center;
+    gap: 20px 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 1200px) {
+    .navigation-container {
+      max-width: 100%;
+    }
+  }
+  
+  .brand-title {
+    color: var(--Brand-600, #25a59e);
+    -webkit-text-stroke: 0.7px var(--Brand-600, #25a59e);
+    letter-spacing: 2.8px;
+    align-self: stretch;
+    margin: auto 0;
+    font: 400 28px Gilda Display, sans-serif;
+  }
+.travel-heading {
+  color: var(--Neutral-900, #262626);
+  text-align: center;
+  align-self: center;
+  margin-top: 135px;
+  font: 400 170px/170px Gilda Display, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.travel-highlight {
+  color: rgba(37, 165, 158, 1);
+}
+
+@media (max-width: 991px) {
+  .travel-heading {
+    max-width: 100%;
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+  
+  .menu-icon-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 28px;
+    margin: auto 0;
+  }
+  .hero-image {
+  aspect-ratio: 1.9;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  z-index: 10;
+  margin-top: -26px;
+}
+
+@media (max-width: 991px) {
+  .hero-image {
+    max-width: 100%;
+  }
+}
+.destination-section {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color: #262626;
+    padding: 100px 120px;
+  }
+
+  .destination-grid {
+    display: flex;
+    margin-top: 60px;
+    width: 100%;
+    flex-direction: column;
+    font-family: Urbanist, sans-serif;
+  }
+
+  .destination-row {
+    display: flex;
+    align-items: start;
+    gap: 20px 44px;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 16px 16px 16px;
+
+  }
+
+  .destination-card {
+    box-shadow: 105.45px 50.41px 78.04px 0px rgba(55, 54, 100, 0.05),
+      -55.45px 50.409px 98px 0px rgba(55, 54, 100, 0.04);
+    background-color: #fff;
+    display: flex;
+    min-width: 240px;
+    min-height: 404px;
+    flex-direction: column;
+    justify-content: start;
+    flex: 1;
+    flex-basis: 0%;
+    padding: 16px 16px 36px;
+  }
+
+  .destination-image {
+    aspect-ratio: 1.37;
+    object-fit: contain;
+    object-position: center;
+    flex: 1;
+  }
+
+  .card-content {
+    display: flex;
+    margin-top: 28px;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0 4px;
+  }
+
+  .destination-name {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .location-info {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  .location-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    align-self: stretch;
+    margin: auto 0;
+  }
+
+
+  @media (max-width: 991px) {
+    .destination-section {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+
+    
+
+    .destination-grid {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+
+    .destination-row {
+      max-width: 100%;
+    }
+  }
