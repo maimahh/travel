@@ -1,166 +1,640 @@
 .navigation-container {
-    align-self: center;
-    display: flex;
-    width: 100%;
-    max-width: 1400px;
-    align-items: center;
-    gap: 20px 100px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  @media (max-width: 1200px) {
-    .navigation-container {
-      max-width: 100%;
-    }
-  }
-  
-  .brand-title {
-    color: var(--Brand-600, #25a59e);
-    -webkit-text-stroke: 0.7px var(--Brand-600, #25a59e);
-    letter-spacing: 2.8px;
-    align-self: stretch;
-    margin: auto 0;
-    font: 400 28px Gilda Display, sans-serif;
-  }
-.travel-heading {
-  color: var(--Neutral-900, #262626);
-  text-align: center;
   align-self: center;
-  margin-top: 135px;
-  font: 400 170px/170px Gilda Display, -apple-system, Roboto, Helvetica, sans-serif;
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  align-items: center;
+  gap: 20px 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .navigation-container {
+    max-width: 100%;
+  }
+}
+
+.brand-title {
+  color: var(--Brand-600, #25a59e);
+  -webkit-text-stroke: 0.7px var(--Brand-600, #25a59e);
+  letter-spacing: 2.8px;
+  align-self: stretch;
+  margin: auto 0;
+  font: 400 28px Gilda Display, sans-serif;
+}
+.travel-heading1 {
+color: var(--Neutral-900, #262626);
+text-align: center;
+align-self: center;
+margin-top: 2%;
+font: 400 130px/130px Gilda Display, -apple-system, Roboto, Helvetica, sans-serif;
 }
 
 .travel-highlight {
-  color: rgba(37, 165, 158, 1);
+color: rgba(37, 165, 158, 1);
 }
 
 @media (max-width: 991px) {
-  .travel-heading {
-    max-width: 100%;
-    margin-top: 40px;
-    font-size: 40px;
-    line-height: 44px;
-  }
+.travel-heading1 {
+  max-width: 100%;
+  margin-top: 40px;
+  font-size: 50px;
+  line-height: 44px;
 }
-  
-  .menu-icon-container {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-start;
-    width: 28px;
-    margin: auto 0;
-  }
-  .hero-image {
-  aspect-ratio: 1.9;
-  object-fit: contain;
-  object-position: center;
-  width: 100%;
-  z-index: 10;
-  margin-top: -26px;
+}
+
+.menu-icon-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 28px;
+  margin: auto 0;
+}
+.hero-image {
+aspect-ratio: 1.9;
+object-fit: contain;
+object-position: center;
+width: 100%;
+z-index: 10;
+margin-top: -260px;
 }
 
 @media (max-width: 991px) {
-  .hero-image {
-    max-width: 100%;
-  }
+.hero-image {
+  max-width: 100%;
+    margin-top: -90px;
+}
 }
 .destination-section {
-    background-color: #fff;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    color: #262626;
-    padding: 100px 120px;
-  }
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: #262626;
+  padding: 100px 120px;
+}
 
+.destination-grid {
+  display: flex;
+  margin-top: 60px;
+  width: 100%;
+  flex-direction: column;
+  font-family: Urbanist, sans-serif;
+}
+
+.destination-row {
+  display: flex;
+  align-items: start;
+  gap: 20px 44px;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 16px 16px 16px;
+
+}
+
+.destination-card {
+  box-shadow: 105.45px 50.41px 78.04px 0px rgba(55, 54, 100, 0.05),
+    -55.45px 50.409px 98px 0px rgba(55, 54, 100, 0.04);
+  background-color: #fff;
+  display: flex;
+  min-width: 240px;
+  min-height: 404px;
+  flex-direction: column;
+  justify-content: start;
+  flex: 1;
+  flex-basis: 0%;
+  padding: 16px 16px 36px;
+}
+
+.destination-image {
+  aspect-ratio: 1.37;
+  object-fit: contain;
+  object-position: center;
+  flex: 1;
+}
+
+.card-content {
+  display: flex;
+  margin-top: 28px;
+  flex-direction: column;
+  justify-content: start;
+  padding: 0 4px;
+}
+
+.destination-name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.location-info {
+  display: flex;
+  margin-top: 8px;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.location-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  align-self: stretch;
+  margin: auto 0;
+}
+@media (max-width: 991px) {
+  .destination-section {
+    max-width: 100%;
+  }
   .destination-grid {
-    display: flex;
-    margin-top: 60px;
-    width: 100%;
-    flex-direction: column;
-    font-family: Urbanist, sans-serif;
+    max-width: 100%;
+    margin-top: 40px;
   }
 
   .destination-row {
-    display: flex;
-    align-items: start;
-    gap: 20px 44px;
-    justify-content: start;
-    flex-wrap: wrap;
-    padding: 16px 16px 16px;
-
+    max-width: 100%;
+  }
+}
+.find-title1 {
+    text-align: center;
+   color: #262626;
+font: 400 40px/52px Gilda Display, -apple-system, Roboto, Helvetica, serif;
+-webkit-text-stroke: 0.2px #262626;
   }
 
-  .destination-card {
-    box-shadow: 105.45px 50.41px 78.04px 0px rgba(55, 54, 100, 0.05),
-      -55.45px 50.409px 98px 0px rgba(55, 54, 100, 0.04);
-    background-color: #fff;
+   @media (max-width: 991px) {
+    .find-title1 {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+
+.find-title2 {
+text-align: center;
+color: #262626;
+font: 500 24px/1 Urbanist, sans-serif;
+}
+@media (max-width: 991px) {
+    .find-title2 {
+      max-width: 100%;
+    }
+  }
+.why-choose-us-section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  }
+  
+  .why-choose-us-content {
+    align-self: center;
+    display: flex;
+    width: 879px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .section-title1 {
+    color: #262626;
+    -webkit-text-stroke: 0.2px #262626;
+    font: 400 72px/1 'Gilda Display', serif;
+  }
+  
+  .section-description {
+    color: #737373;
+    font: 500 18px/32px 'Urbanist', sans-serif;
+  }
+  
+  .feature-cards {
+    display: flex;
+    margin-top: 60px;
+    width: 100%;
+    align-items: flex-start;
+    gap: 28px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    justify-content: flex-end;
+    background: #fff;
+    box-shadow: 10px 26px 150px 0 rgba(67, 67, 100, 0.1);
+    position: relative;
     display: flex;
     min-width: 240px;
-    min-height: 404px;
     flex-direction: column;
-    justify-content: start;
     flex: 1;
     flex-basis: 0%;
-    padding: 16px 16px 36px;
+    padding: 40px 32px 48px;
   }
-
-  .destination-image {
-    aspect-ratio: 1.37;
-    object-fit: contain;
-    object-position: center;
-    flex: 1;
-  }
-
-  .card-content {
+  
+  .feature-card-content {
+    z-index: 0;
     display: flex;
-    margin-top: 28px;
+    width: 100%;
     flex-direction: column;
-    justify-content: start;
-    padding: 0 4px;
   }
-
-  .destination-name {
-    font-size: 24px;
-    font-weight: 700;
+  
+  .feature-card-title {
+    color: #262626;
+    -webkit-text-stroke: 0.4px #262626;
+    font: 40px/62px 'Gilda Display', serif;
   }
-
-  .location-info {
+  
+  .feature-card-description {
+    color: #737373;
+    margin-top: 20px;
+    font: 18px/32px 'Urbanist', sans-serif;
+  }
+  
+  .feature-card-action {
+    align-self: flex-end;
+    z-index: 0;
     display: flex;
-    margin-top: 8px;
-    align-items: center;
-    gap: 8px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 32px;
+    margin-top: 80px;
+    align-items: flex-start;
+    gap: 12%;
+    color: #25a59e;
+    font: 20px 'Gilda Display', serif;
   }
-
-  .location-icon {
-    aspect-ratio: 1;
-    object-fit: contain;
-    object-position: center;
-    align-self: stretch;
-    margin: auto 0;
+  
+  .feature-card-link {
+    -webkit-text-stroke: 0.4px #25a59e;
+    text-decoration: none;
+    color: inherit;
   }
-
-
+  
+  .feature-card-icon {
+    width: 24%;
+    height: 24%;
+  }
+  
+  .feature-card-highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #25a59e;
+  }
+  
+  .feature-card-special {
+    background: #25a59e;
+  }
+  
+  .feature-card-special .feature-card-title,
+  .feature-card-special .feature-card-description,
+  .feature-card-special .feature-card-action {
+    color: #fff;
+  }
+  
+  .feature-card-special .feature-card-description {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .feature-card-special .feature-card-link {
+    -webkit-text-stroke: 0.4px #fff;
+  }
+  
   @media (max-width: 991px) {
-    .destination-section {
+    .why-choose-us-section {
       max-width: 100%;
-      padding: 0 20px;
     }
-
-    
-
-    .destination-grid {
-      max-width: 100%;
+  
+    .section-title {
+      font-size: 40px;
+    }
+  
+    .feature-cards {
       margin-top: 40px;
     }
-
-    .destination-row {
-      max-width: 100%;
+  
+    .feature-card {
+      padding: 0 20px;
+    }
+  
+    .feature-card-action {
+      margin-top: 40%;
     }
   }
+.travel-section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 26px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .content-wrapper {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    flex-basis: 0%;
+    margin: auto 0;
+  }
+  
+  .text-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .main-heading {
+    color: #262626;
+    -webkit-text-stroke: 0.2px #262626;
+    font: 400 72px/84px Gilda Display, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .description {
+    color: #25a59e;
+    margin-top: 28px;
+    font: 500 18px/32px Urbanist, sans-serif;
+  }
+  
+  .travel-image {
+    aspect-ratio: 1.32;
+    object-fit: contain;
+    object-position: center;
+    width: 640px;
+    align-self: stretch;
+    min-width: 240px;
+    margin: auto 0;
+  }
+  
+  .highlight {
+    color: #25a59e;
+  }
+  
+  @media (max-width: 991px) {
+    .travel-section {
+      max-width: 100%;
+    }
+  
+    .content-wrapper,
+    .text-container,
+    .description,
+    .travel-image {
+      max-width: 100%;
+    }
+  
+    .main-heading {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 52px;
+    }
+  }
+.trip-documentation {
+display: flex;
+width: 100%;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+padding: 100px 0;
+}
+
+.trip-title {
+color: var(--Neutral-900, #262626);
+text-align: center;
+-webkit-text-stroke: 0.2px var(--Neutral-900, #262626);
+width: 680px;
+font: 400 72px/84px Gilda Display, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.video-container {
+position: relative;
+display: flex;
+margin-top: 48px;
+width: 100%;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+.main-video {
+aspect-ratio: 2.4;
+object-fit: contain;
+object-position: center;
+width: 100%;
+z-index: 0;
+}
+
+.overlay-image {
+aspect-ratio: 1;
+object-fit: contain;
+object-position: center;
+width: 131px;
+position: absolute;
+z-index: 1;
+right: 654px;
+bottom: 234px;
+height: 131px;
+}
+
+@media (max-width: 991px) {
+.trip-documentation {
+  max-width: 100%;
+}
+
+.trip-title {
+  max-width: 100%;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.video-container {
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+.main-video {
+  max-width: 100%;
+}
+  .overlay-image{
+      max-width: 100%
+  }
+}
+.footer {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offer-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.offer-content {
+  align-self: center;
+  display: flex;
+  width: 1200px;
+  max-width: 100%;
+  align-items: center;
+  gap: 40px 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.offer-heading {
+  color: #262626;
+  text-align: center;
+  -webkit-text-stroke: 0.2px #262626;
+  border-color: #262626;
+  align-self: stretch;
+  margin: auto 0;
+  font: 400 72px/1 Gilda Display, sans-serif;
+}
+
+.cta-button {
+  background-color: #25a59e;
+  color: #fff;
+  text-align: right;
+  padding: 20px 32px;
+  font: 600 18px Urbanist, sans-serif;
+  border-color: white;
+  
+}
+
+.divider {
+  background-color: #d9d9d9;
+  min-height: 1px;
+  margin-top: 48px;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+}
+
+.footer-content {
+  display: flex;
+  margin-top: 80px;
+  width: 100%;
+  align-items: end;
+  gap: 40px 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand-info {
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  justify-content: start;
+  width: 313px;
+}
+
+.brand-content {
+  display: flex;
+  max-width: 100%;
+  width: 313px;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.brand-name {
+  color: #25a59e;
+  -webkit-text-stroke: 0.7px #25a59e;
+  letter-spacing: 2.8px;
+  font: 400 28px Gilda Display, sans-serif;
+}
+
+.brand-description {
+  color: #595959;
+  margin-top: 20px;
+  font: 500 18px/32px Urbanist, sans-serif;
+}
+
+.social-links {
+  align-self: start;
+  display: flex;
+  margin-top: 48px;
+  min-height: 42px;
+  align-items: center;
+  gap: 32px;
+  overflow: hidden;
+  justify-content: start;
+}
+
+.social-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 40px;
+  filter: drop-shadow(105.449px 50.409px 121.042px rgba(44, 29, 60, 0.25));
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.menu-container {
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  align-items: end;
+  color: #595959;
+  justify-content: center;
+  font: 600 18px/32px Urbanist, sans-serif;
+}
+
+.menu {
+  display: flex;
+  padding-top: 12px;
+  align-items: start;
+  gap:  50px;
+  justify-content: start;
+}
+
+@media (max-width: 991px) {
+  .footer,
+  .offer-container,
+  .offer-content,
+  .footer-content,
+  .brand-info,
+  .brand-content,
+  .menu-container  {
+          font: 600 16px Urbanist, sans-serif;
+
+  }
+  .menu {
+    max-width: 90%;
+  }
+
+  .offer-heading {
+    font-size: 40px;
+  }
+
+  .divider {
+    margin-top: 40px;
+  }
+
+  .footer-content {
+    margin-top: 40px;
+  }
+
+  .social-links {
+    margin-top: 40px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
